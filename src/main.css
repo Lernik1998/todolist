@@ -1,0 +1,161 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container */
+.app {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.titulo,
+.lista h3,
+.listaTareas h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Input for Name */
+.saludo input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Task Form */
+form {
+    margin-top: 20px;
+}
+
+form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Radio Buttons */
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.opciones input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #007BFF;
+}
+
+/* Task List */
+.listaTareas {
+    margin-top: 20px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tareasInd {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tareasInd input[type="text"] {
+    flex: 1;
+    border: none;
+    font-size: 16px;
+    background: none;
+    color: #333;
+}
+
+.tareasInd input[type="text"]:focus {
+    outline: none;
+    border-bottom: 1px solid #007BFF;
+}
+
+.tareasInd .acciones {
+    margin-left: 10px;
+}
+
+.borrar {
+    padding: 5px 10px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.borrar:hover {
+    background-color: #d32f2f;
+}
+
+/* Completed Tasks */
+.completado {
+    background-color: #d4edda;
+}
+
+.completado input[type="text"] {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.completado .borrar {
+    background-color: #6c757d;
+}
+
+.completado .borrar:hover {
+    background-color: #495057;
+}
