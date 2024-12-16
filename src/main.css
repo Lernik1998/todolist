@@ -33,7 +33,7 @@ body {
 /* Input for Name */
 .saludo input[type="text"] {
     display: block;
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #ddd;
